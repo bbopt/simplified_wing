@@ -1,0 +1,20 @@
+#################################
+#  Problem MDO simplified wing  #
+#################################
+
+DIMENSION       7
+BB_EXE          truth.exe
+BB_OUTPUT_TYPE  OBJ PB PB PB
+
+X0          points/x0.txt
+
+# LOWER_BOUND ( 30.0  6.0 0.28 -1.0 -1.0 1.6 0.30 )
+# UPPER_BOUND ( 45.0 12.0 0.50  3.0  3.0 5.0 0.79 )
+
+LOWER_BOUND *   0.0
+UPPER_BOUND * 100.0
+
+MAX_BB_EVAL     7000
+
+model_search    quadratic
+model_eval_sort quadratic

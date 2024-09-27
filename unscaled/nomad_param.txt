@@ -1,0 +1,32 @@
+#################################
+#  Problem MDO simplified wing  #
+#################################
+
+DIMENSION       7
+BB_EXE          truth.exe
+BB_OUTPUT_TYPE  OBJ PB PB PB
+
+X0          points/x0.txt
+
+LOWER_BOUND ( 30.0  6.0 0.28 -1.0 -1.0 1.6 0.30 )
+UPPER_BOUND ( 45.0 12.0 0.50  3.0  3.0 5.0 0.79 )
+
+DIRECTION_TYPE ORTHO 2N
+
+LH_SEARCH        20 0
+OPPORTUNISTIC_LH NO
+
+max_bb_eval 1000
+
+MODEL_SEARCH    no
+MODEL_EVAL_SORT no
+
+MODEL_TGP_MODE             FAST
+MODEL_TGP_REUSE_MODEL      YES
+MODEL_SEARCH_PROJ_TO_MESH  YES
+MODEL_SEARCH_MAX_TRIAL_PTS 10
+
+DISPLAY_DEGREE 1
+DISPLAY_STATS  BBE SOL OBJ
+
+SEED 51541
