@@ -1,6 +1,6 @@
-# SIMPLIFIED-WING: An MDO problem (September 2024)
+# SIMPLIFIED-WING: An MDO problem (January 2025)
 
-Implementation of the problem described in
+Implementation of the problem described in:
 
 Tribes, Dubé, Trépanier, Decomposition of multidisciplinary optimization
 problems: formulations and application to a simplified wing design. Engineering
